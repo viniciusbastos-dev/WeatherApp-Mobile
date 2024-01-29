@@ -1,0 +1,11 @@
+API_KEY=52a7e91e29ba3efc62b3677d565a1764
+
+Imagem
+https://openweathermap.org/img/wn/10n@2x.png
+
+https://viniciusbastos-dev.vercel.app/api/weather?lat=60.1674881&lon=24.9427473
+https://viniciusbastos-dev.vercel.app/api/geo?q=${cityName}
+
+api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
+
+fazer uma endpoint com clima atual, forecast e adicionar nome da cidade,estado e pais
