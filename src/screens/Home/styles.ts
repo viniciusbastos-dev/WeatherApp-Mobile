@@ -1,25 +1,12 @@
-import { ImageBackground } from "react-native";
+import { Dimensions, ImageBackground, StatusBar } from "react-native";
 import styled from "styled-components/native";
 
 export const Container = styled(ImageBackground)`
-    flex: 1;
-    justify-content: center;
-    align-items: center;
+    padding-top: ${StatusBar.currentHeight
+        ? StatusBar.currentHeight + 50
+        : 50}px;
 `;
 
-export const HouseImage = styled.Image``;
-
-export const City = styled.Text`
-    font-size: 32px;
-    color: white;
+export const HouseImage = styled.Image`
+    margin-top: 24px;
 `;
-
-export const Temperature = styled.Text`
-    font-family: "SF-Pro-Display-Thin";
-    color: white;
-    font-size: 96px;
-`;
-
-export const Weather = styled.Text``;
-
-export const Coords = styled.Text``;
